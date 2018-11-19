@@ -67,9 +67,6 @@ public function ActionDataServiceGroup()
             ],
             [
                 'attribute' => 'service_group_status',
-            ],
-            [
-                'attribute' => 'service_group_status',
                 'value' => function ($model, $key, $index) {
                     return static::getBadgeStatus($model['service_group_status']);
                 },
@@ -130,4 +127,22 @@ public function ActionDataServiceGroup()
     ]);
     return $columns->renderDataColumns();
 }
+```
+
+Result
+```
+[
+    {
+        "service_group_id": 1,
+        "service_group_name": "Example1",
+        "service_group_status": "<span class=\"badge badge-success\">Active</span>",
+        "actions": "html format"
+    },
+    {
+        "service_group_id": 2,
+        "service_group_name": "Example2",
+        "service_group_status": "<span class=\"badge badge-success\">Active</span>",
+        "actions": "html format"
+    },
+];
 ```
