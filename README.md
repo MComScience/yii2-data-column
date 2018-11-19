@@ -15,7 +15,7 @@ The minimum requirement is that your Web server supports PHP 7.0 or >.
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
 ```
-composer require m-comscience/yii2-data-column
+composer require m-comscience/yii2-data-column '@dev'
 ```
 
 ## Usage
