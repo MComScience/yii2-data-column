@@ -1,0 +1,22 @@
+{
+    "name": "m-comscience/yii2-data-column",
+    "description": "Data Column for Yii2 framework",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","yii2 data column"],
+    "homepage": "https://github.com/MComScience/yii2-data-column",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Tanakorn Phompak",
+            "email": "mcomsciencermu@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "mcomscience\\data\\": "src"
+        }
+    }
+}
